@@ -4,7 +4,8 @@
 
 @layer base {
   body {
-    @apply bg-[#141414] text-white;
+    @apply bg-[#141414] text-white overflow-x-hidden !scrollbar-thin !scrollbar-track-transparent
+     !scrollbar-thumb-red-600 !scrollbar-thumb-rounded-full;
   }
   header {
     @apply flex items-center justify-between fixed top-0 z-50 w-full
@@ -16,5 +17,13 @@
   .headerLink {
     @apply cursor-pointer text-sm font-light text-[#efefef] transition
     duration-[.4s] hover:text-[#b3b3b3];
+  }
+  .bannerBtn {
+    @apply cursor-pointer flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold
+    transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl;
+  }
+  .scrollArrowIcon {
+    @apply cursor-pointer absolute top-0 bottom-0 z-40 m-auto h-9 opacity-0
+    transition hover:scale-125 group-hover:opacity-100;
   }
 }
