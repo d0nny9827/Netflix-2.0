@@ -26,4 +26,15 @@
     @apply cursor-pointer absolute top-0 bottom-0 z-40 m-auto h-9 opacity-0
     transition hover:scale-125 group-hover:opacity-100;
   }
+  .input {
+    @apply w-full rounded bg-[#333] px-5 py-3.5 placeholder:text-[gray]
+    outline-none focus:bg-[#454545] transition-all duration-200 hover:opacity-90;
+  }
+  .signinButton {
+    @apply w-full rounded py-3 font-semibold hover:bg-opacity-80 transition-all duration-500;
+  }
+  .modalButton {
+    @apply cursor-pointer flex items-center justify-center h-11 w-11  rounded-full border-2
+    border-[gray] bg-[#2a2a2a]/60 transition hover:border-white hover:bg-white/10
+  }
 }
